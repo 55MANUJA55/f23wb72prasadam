@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1= title
-   p Rows: #{query.rows}, Columns: #{query.cols}
+  p Rows: #{query.rows}, Columns: #{query.cols}
   - var rows=Number(query.rows);
   - var cols=Number(query.cols);
   if !Number.isInteger(rows)
     p Entered rows value is not an integer rows
-  else if (!Number.isInteger(cols)|| !Number.isInteger(cols))
+  else if !Number.isInteger(cols)
     p Entered columns value is not an integer
   else if rows<1||rows>10
     p Entered rows value is out of range  
