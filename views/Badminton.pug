@@ -7,8 +7,9 @@ block content
     div(class="container-fluid mt-3")
     div(class="row")
         each Badminton,index in badminton
-            div(class="col-sm-2 bg-primary m-1 p-3"onclick=`buy(${index})`) #{Badminton.Player_Name} - #{Badminton.Player_Age} - #{Badminton.No_Of_Matches_Played}
-script.
+            div(class="col-sm-2 bg-primary m-1 p-3" onclick=`buy(${index})`) #{Badminton.Player_Name} - #{Badminton.Player_Age} - #{Badminton.No_Of_Matches_Played}
+            
+    script.
 
      function buy(itemNo)
       {
